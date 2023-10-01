@@ -1,0 +1,26 @@
+{
+  "name": "bienesraices_mvc",
+  "version": "1.0.0",
+  "description": "Practica mvc - Node.js - Andrés Núñez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3Tenebris3/MVC_BienesRaices_Node.JS.git"
+  },
+  "keywords": [
+    "MVC",
+    "Pug",
+    "Tailwind",
+    "MySQL",
+    "Sequelize"
+  ],
+  "author": "Joaquin Andrés Núñez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3Tenebris3/MVC_BienesRaices_Node.JS/issues"
+  },
+  "homepage": "https://github.com/3Tenebris3/MVC_BienesRaices_Node.JS#readme"
+}
