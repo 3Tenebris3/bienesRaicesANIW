@@ -14,7 +14,7 @@ const Usuario = db.define('usuarios',{
         type: DataTypes.STRING,
         allowNull: false
     },
-    contrasenia: {
+    password: {
         type: DataTypes.STRING,
         allowNull: false
     },

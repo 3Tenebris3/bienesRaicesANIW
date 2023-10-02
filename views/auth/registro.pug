@@ -22,16 +22,16 @@ block contenido
                         input#apellido.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu apellido" type="text" name="apellido" value= usuario ? usuario.apellido:'')
                     div
                         label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="correo") Correo :
-                        input#correo.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu correo" type="email" name="correo" value= usuario ? usuario.correo:'')
+                        input#correo.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu correo" type="email" value= usuario ? usuario.correo : '' name="correo")
                     div
-                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="correo") Confirmar Correo :
-                        input#cCorreo.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Vuelve a escribir tu correo" type="email" name='cCorreo')
+                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="validarCorreo") Confirmar Correo :
+                        input#validarCorreo.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Vuelve a escribir tu correo" type="email" name="validarCorreo")
                     div
                         label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="contraseña") Contraseña :
-                        input#password.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu contraseña" type="password" name='password')
+                        input#password.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu contraseña" type="password" name="password")
                     div
-                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="contraseña") Confirma tu Contraseña :
-                        input#rPassword.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu contraseña" type="password" name='password')
+                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold(for="repetirPassword") Confirma tu Contraseña :
+                        input#validarPassword.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Repite la contraseña" type="password" name="validarPassword")
 
                     div.flex.items-center.justify-between
                         a(href="/auth/login" class="text-gray-500 text-xs hover:text-indigo-700") ¿Ya tienes cuenta? Inicia Sesión
