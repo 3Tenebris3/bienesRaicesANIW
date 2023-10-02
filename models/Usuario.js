@@ -21,3 +21,5 @@ const Usuario = db.define('usuarios',{
     token: DataTypes.STRING,
     confirmado: DataTypes.BOOLEAN
 })
+
+export default Usuario
