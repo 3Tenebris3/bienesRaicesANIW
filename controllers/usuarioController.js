@@ -5,9 +5,10 @@ const formularioLogin = (req, res) => {
 
 const formularioRegister = (req, res) => {
     res.render('auth/registro', {
+        pagina: 'Crear Cuenta'
     })
 }
-
+ 
 export {
     formularioLogin,
     formularioRegister

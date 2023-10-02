@@ -14,6 +14,9 @@ app.use( express.static('public') )
 //Routing
 app.use('/auth', usuarioRoutes)
 
+
+
+
 //Definir un puerto y arrancar el proyecto
 const port = 3000;
 app.listen(port, () => {
