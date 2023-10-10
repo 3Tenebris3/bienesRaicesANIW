@@ -538,11 +538,20 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .block {
   display: block;
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -634,6 +643,9 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .text-center {
   text-align: center;
