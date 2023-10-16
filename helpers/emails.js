@@ -1,7 +1,6 @@
 import nodemailer from 'nodemailer'
 import fs from 'fs'
 
-const template = fs.readFileSync('./views/emails/templateConfirmacion.html', 'utf-8');
 
 const emailRegistro = async (datos) => {
     const transport = nodemailer.createTransport({
@@ -12,7 +11,7 @@ const emailRegistro = async (datos) => {
           pass: process.env.EMAIL_PASS
         }
       });
-      
+      const template = fs.readFileSync('./views/emails/templateConfirmacion.html', 'utf-8');
       const { correo, nombre, apellido, token} = datos
       const correoHTML = template
         .replace('{{ nombre }}', nombre)
@@ -40,7 +39,7 @@ const emailOlvidePassword = async (datos) => {
         pass: process.env.EMAIL_PASS
       }
     });
-    
+    const template = fs.readFileSync('./views/emails/templateForgotPassword.html', 'utf-8');
     const { correo, nombre, apellido, token} = datos
     const correoHTML = template
       .replace('{{ nombre }}', nombre)
@@ -53,8 +52,8 @@ const emailOlvidePassword = async (datos) => {
     await transport.sendMail({
       from: 'BienesRaices.com',
       to: correo,
-      subject: 'Confirma tu Cuenta en BienesRaices.com',
-      text:'Confirma tu Cuenta en BienesRaices.com',
+      subject: 'Recupera tu contraseña en BienesRaices.com',
+      text:'Recupera tu contraseña en BienesRaices.com',
       html: correoHTML
     })
 }
