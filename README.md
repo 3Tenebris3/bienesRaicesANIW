@@ -1,8 +1,7 @@
 # Bienes Raices MVC  
 ## Andrés Núñez
 
-LINK VIDEO: CRUD
-LINK DIAGRAMA ARQUITECTURA: DIAGRAMA
+LINK VIDEO: [CRUD-LOGIN](https://udlaec-my.sharepoint.com/:f:/g/personal/joaquin_nunez_udla_edu_ec/Eq9lSQfWxQRNmXe7SxEUIX8BaHqDhOzmNfOKNd2EVVy94g?e=65pSDS)
 
 Proyecto Ingenieria WEB
 
