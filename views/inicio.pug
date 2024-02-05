@@ -5,7 +5,15 @@ block styles
 
 
 block contenido
+    
     div(class="py-5 ")
+        section(class="py-5")
+            h2(class="text-center text-4xl font-extrabold pt-10") Propiedades mas visitadas 
+
+            div(class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-14")
+                each propiedad in data
+                    include ./templates/cardvisitas
+        
         h1(class="text-center text-4xl font-extrabold") Ubicación en el Mapa
 
         div(class="flex flex-col md:flex-row items-center py-10 gap-4")

@@ -6,6 +6,8 @@ import propiedadesRoutes from './routes/propiedadesRoutes.js'
 import appRoutes from './routes/appRoutes.js'
 import apiRoutes from './routes/apiRoutes.js'
 import db from './config/db.js'
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Crear la app
 const app = express()
@@ -41,8 +43,16 @@ app.use('/auth', usuarioRoutes)
 app.use('/', propiedadesRoutes)
 app.use('/api', apiRoutes)
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
+// Sirve los archivos estáticos de React
+app.use(express.static(path.join(__dirname, 'client/build')));
 
+// Ruta para acceder a la aplicación React
+app.get('/mi-vista-react', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 
 // Definir un puerto y arrancar el proyecto
 const port = process.env.PORT || 3000;
